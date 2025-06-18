@@ -20,14 +20,6 @@ Sketch Era is a concept anime portal designed to:
 - **JavaScript (Vanilla)** – For basic interactivity (like buttons, scroll effects)
 
 ---
-
-## 📸 Preview
-
-![Sketch Era Preview](insert-screenshot-link-here)  
-*Add a screenshot of your landing page or animated homepage here.*
-
----
-
 ## 📁 Features
 
 - 🎨 Stylish landing page design with anime-themed elements
