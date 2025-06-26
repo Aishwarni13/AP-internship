@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: blue;
+  min-height: 100vh;
+}
+
+
+.form-container {
+  background-image: url('game.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.logo-top-end {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.logo-top-end h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  color:white;
+  font-weight: bold;
+}
+
+.form-container form {
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-container input,
+.form-container textarea {
+  background-color: rgba(255, 255, 255, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 0.8rem;
+  color: #fff; 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); 
+  outline: none;
+  font-size: 1rem;
+}
+
+.form-container button {
+  padding: 0.8rem;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.form-container p {
+  text-align: center;
+}
+
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "nav nav"
+    "main main";
+  min-height: 100vh;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #007BFF;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+
+.todo,
+.contact-form {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+}
+
+.todo h3,
+.contact-form h3 {
+  margin-bottom: 1rem;
+}
+
+.todo input,
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.todo button,
+.contact-form button {
+  padding: 0.7rem 1rem;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo button:hover,
+.contact-form button:hover {
+  background-color: #1e7e34;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#taskList li {
+  background-color: #e9ecef;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "main";
+  }
+
+  main {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
