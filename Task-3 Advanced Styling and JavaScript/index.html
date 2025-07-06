@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login to Carousel & Joke App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loginPage" class="page">
+    <h1>Login</h1>
+    <div class="login-form">
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="loginBtn">Login</button>
+      <p id="loginError"></p>
+    </div>
+  </div>
+<div id="mainPage" class="page" style="display: none;">
+  <h1>Welcome to the Carousel & Joke App</h1>
+
+  <div class="category-select">
+    <label for="category">Select Image Category:</label>
+    <select id="category">
+      <option value="">-- Select --</option>
+      <option value="animals">Animals</option>
+      <option value="nature">Nature</option>
+      <option value="city">City</option>
+    </select>
+  </div>
+
+  <div class="carousel" style="display: none;">
+    <div id="imageGallery" class="image-gallery"></div>
+  </div>
+
+  <div class="joke-section">
+    <p id="jokeText">Click the button to load a joke!</p>
+    <button id="loadJoke">Get Joke</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
