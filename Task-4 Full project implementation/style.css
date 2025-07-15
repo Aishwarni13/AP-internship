@@ -1,0 +1,246 @@
+.contact-details {
+  list-style: none;
+  padding: 0;
+  color: gray;
+  font-size: 16px;
+}
+
+.contact-details li {
+  margin-bottom: 8px;
+}
+
+.contact-details a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+body, p, h1, h2, h3, input, textarea, li {
+  line-height: 1.6;
+}
+.product-card {
+  margin-bottom: 20px;
+}
+.filters select {
+  padding: 12px 16px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  min-width: 220px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filters select:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: url("g.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: black;
+  padding: 20px;
+  }
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hidden {
+  display: none;
+}
+
+.page {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+#loginPage {
+  max-width: 300px;
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+#loginPage input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 4px;
+}
+
+#loginPage button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+header {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffde59;
+}
+
+
+#mainPage .page {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 4px;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-container input,
+.todo-container button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 4px;
+  border: none;
+}
+
+.todo-container ul {
+  list-style: none;
+  width: 100%;
+  max-width: 400px;
+  padding: 0;
+}
+
+.todo-container li {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.todo-container button.delete {
+  background: crimson;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
