@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaleSphere</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <section id="login-page" class="page login-bg">
+  <div class="login-overlay">
+    <div class="login-container">
+      <h1 class="animated-title">Welcome to <span class="highlight">TaleSphere</span></h1>
+      <p class="subtext">Dive into epic anime adventures</p>
+      <button id="readNowBtn">📖 Read Now</button>
+    </div>
+  </div>
+</section>
+
+
+  
+  <div id="main-content" class="hidden main-bg">
+    <aside class="sidebar">
+      <header class="top-navbar">
+  <div class="logo">TaleSphere</div>
+  <nav class="top-nav">
+    <a href="#" data-page="home">Home</a>
+    <a href="#" data-page="trending">Trending</a>
+    <a href="#" data-page="genres">Genres</a>
+    <a href="#" data-page="favorites">Favorites</a>
+    <a href="#" data-page="account">My Account</a>
+    <button id="darkModeToggle" class="dark-toggle">🌙 Dark Mode</button>
+  </nav>
+</header>
+
+
+    <main>
+      
+      <section id="home" class="page">
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search Tales..." />
+        </div>
+        <div id="series-list" class="grid-container"></div>
+      </section>
+
+      
+      <section id="trending" class="page hidden">
+        <h2>Trending Series</h2>
+        <div id="trending-list" class="grid-container"></div>
+      </section>
+
+      
+      <section id="genres" class="page hidden">
+        <h2>Genres</h2>
+        <div class="genre-buttons">
+          <button onclick="loadGenre('Action')">Action</button>
+          <button onclick="loadGenre('Fantasy')">Fantasy</button>
+          <button onclick="loadGenre('Drama')">Drama</button>
+          <button onclick="loadGenre('Mystery')">Mystery</button>
+          <button onclick="loadGenre('Comedy')">Comedy</button>
+        </div>
+        <div id="genre-series" class="grid-container"></div>
+      </section>
+
+      
+      <section id="account" class="page hidden">
+        <h2>My Account</h2>
+        <div style="text-align: center; margin-bottom: 20px;">
+          <img src="girl.webp" alt="Profile Picture" style="width: 100px; height: 100px; border-radius: 50%; border: 2px solid #ff4081;" />
+        </div>
+
+
+        <div id="account-details">
+          <p><strong>Full Name:</strong> <span class="accent">Aishu Aishu</span></p>
+          <p><strong>Username:</strong> <span class="accent">TaleReader</span></p>
+          <p><strong>Email:</strong> <span class="accent">reader@talesphere.com</span></p>
+          <p><strong>Subscription:</strong> <span class="accent">Premium</span></p>
+          <p><strong>Joined:</strong> <span class="accent">March 18, 2024</span></p>
+          <p><strong>Favorite Genre:</strong> <span class="accent">Fantasy & Action</span></p>
+          <p><strong>Progress:</strong> <span class="accent">68% Completed</span></p>
+          <p><strong>About Me:</strong> <span class="accent">A passionate anime lover who enjoys epic tales and thrilling adventures. Always ready to discover new worlds!</span></p>
+        </div>
+        <p><strong>Reading Progress:</strong></p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 68%;">68%</div>
+        </div>
+
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+    <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 TaleSphere. All rights reserved.</p>
+      <p>📍 Address: 123 Anime Lane, Otaku City, Tokyo, Japan</p>
+      <p>📧 Email: contact@talesphere.com | 📞 Phone: +81 90 ---- ----</p>
+    </div>
+  </footer>
+  <div id="storyModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeModal" class="close-btn">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <img id="modalImage" src="" alt="" style="width: 200px; border-radius: 8px; margin: 15px 0;" />
+    <p id="modalStory" style="margin-top: 10px;"></p>
+  </div>
+  </section>
+      <section id="favorites" class="page hidden">
+        <h2>My Favorites</h2>
+        <div id="favorites-list" class="grid-container"></div>
+      </section>
+
+</div>
+</body>
+</html>
